@@ -28,13 +28,13 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC | BT1   | BT2   |  BT3  |  BT4  | BT5  |    |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | BTCLR|       |       |       |       |      |    | LFT | DWN |  UP | RGT |  \  |      |
-// | SHFT |       |       |       |       |      |    |  1  |  2  |  3  |  4  |  5  |      |
+// | BTCLR|       |       |       |       |      |    | LFT | DWN |  UP | RGT |  \  |  HOME |
+// | SHFT |       |       |       |       |      |    |  1  |  2  |  3  |  4  |  5  |  END  |
 //                    | ALT |     | SPC |             | ENT |     | RGUI |
                         bindings = <
    &kp ESC   &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_SEL 5  &kp N6  &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
-   &bt BT_CLR &trans  &trans  &trans &trans &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSLH &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &kp N1   &kp N2  &kp N3 &kp N4  &kp N5 &trans
+   &bt BT_CLR &trans  &trans  &trans &trans &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSLH &kp HOME
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &kp N1   &kp N2  &kp N3 &kp N4  &kp N5 &kp END
                                     &kp LALT     &trans       &kp SPACE      &kp RET  &trans   &kp RGUI
                         >;
                 };
