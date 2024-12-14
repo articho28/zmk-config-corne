@@ -47,7 +47,7 @@
                         >;
                 };
                 
-                num {
+                // num {
 // // -----------------------------------------------------------------------------------------
 // // |  ESC |    |    |    |    |    |  #   |  [  |  7  |  8  |  9  |  =  |  BSPC |
 // // |  CTRL    |    |    |    |    |    |  #   |  ]  |  4  |  5  |  6  |  *  |  ;    |
@@ -115,7 +115,7 @@
    // &kp LSHFT &kp F10 &kp F1 &kp F2 &kp F3 &trans   &trans &trans  &trans  &trans &trans &trans
                            // &trans &trans  &trans   &trans   &trans    &trans
                         // >;
-                // };
+                //};
          };
 };
                 
