@@ -92,12 +92,12 @@
                 media {
 // // -----------------------------------------------------------------------------------------
 // // | BTCLR  |   BT0     | BT1  |  BT2  |  BT3    |  BT4 | #  |    |    |    |    |    |  |
-// // |    |      |  |  |    |      | #  |    |    |    |    |    |  |
-// // |        |       |  |   |  P   |      | #  |    |    |    |    |    |  |
+// // |        |           |      |       |         |      | #  |    | LCTRL   |  LSHFT  | LALT   | LGUI   |  |
+// // |        |           |      |       |         |      | #  |    |    |    |    |    |  |
 // //                             |       |         |      | #  |    |  HELD |    | 
                         bindings = <
    &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans &trans  &trans &trans &trans &trans
-   &trans &trans  &trans  &trans   &trans   &trans                   &trans &trans  &trans &trans &trans &trans 
+   &trans &trans  &trans  &trans   &trans   &trans                   &trans &kp LCTRL  &kp LSHFT &kp LALT &kp LGUI &trans 
    &trans &trans   &trans &trans   &trans                          &trans &trans  &trans  &trans &trans &trans
                              &trans  &trans   &trans   &trans   &trans    &trans
                         >;
