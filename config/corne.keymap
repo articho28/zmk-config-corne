@@ -69,9 +69,9 @@
 // //              |    |     | HELD     |  #   |        |        |        |
                         bindings = <
    &kp ESC    &trans       &trans       &trans       &trans       &trans         &trans &kp INS &kp DEL &kp PSCRN &kp PG_UP &trans
-   &kp LCTRL     &trans       &trans       &trans       &trans       &trans         &kp LEFT  &kp DOWN  &kp UP &kp RIGHT &kp PG_DW  &trans
+   &kp LCTRL  &trans       &trans       &trans       &trans       &trans         &kp LEFT  &kp DOWN  &kp UP &kp RIGHT &kp PG_DW  &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans  &kp HOME  &kp END &trans  &trans &trans
-                                        // &trans     &trans       &trans     &trans  &trans   &trans
+                                        &trans       &trans       &trans         &trans  &trans   &trans
                         >;
                 };
 
