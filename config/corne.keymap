@@ -47,7 +47,7 @@
                         >;
                 };
                 
-                 num {
+                num {
 // // -----------------------------------------------------------------------------------------
 // // |  ESC |    |    |    |    |    |  #   |  [  |  7  |  8  |  9  |  =  |  BSPC |
 // // |  CTRL    |    |    |    |    |    |  #   |  ]  |  4  |  5  |  6  |  *  |  ;    |
@@ -61,19 +61,19 @@
                         >;
                 };
 
-                // nav {
+                nav {
 // // -----------------------------------------------------------------------------------------
 // // | ESC   |    |    |    |    |      |  #   |        |   INS  |  DEL   |  PSCRN   | PG_UP   |  |
 // // | CTRL  |    |    |    |    |      |  #   |  LEFT  |  DOWN  |  UP    |  RIGHT   | PG_DW   |  |
 // // | SHFT  |    |    |    |    |      |  #   |        |  HOME  |  END   |          |         |  |
 // //              |    |     | HELD     |  #   |        |        |        |
-                        // bindings = <
-   // &kp ESC    &trans       &trans       &trans       &trans       &trans         &trans &kp INS &kp DEL &kp PSCRN &kp PG_UP &trans
-   // &kp LCTRL     &trans       &trans       &trans       &trans       &trans         &kp LEFT  &kp DOWN  &kp UP &kp RIGHT &kp PG_DW  &trans
-   // &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans  &kp HOME  &kp END &trans  &trans &trans
+                        bindings = <
+   &kp ESC    &trans       &trans       &trans       &trans       &trans         &trans &kp INS &kp DEL &kp PSCRN &kp PG_UP &trans
+   &kp LCTRL     &trans       &trans       &trans       &trans       &trans         &kp LEFT  &kp DOWN  &kp UP &kp RIGHT &kp PG_DW  &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans  &kp HOME  &kp END &trans  &trans &trans
                                         // &trans     &trans       &trans     &trans  &trans   &trans
-                        // >;
-                // };
+                        >;
+                };
 
                 // sym {
 // // -----------------------------------------------------------------------------------------
