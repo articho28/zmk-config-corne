@@ -92,30 +92,30 @@
                 media {
 // // -----------------------------------------------------------------------------------------
 // // | BTCLR  |   BT0     | BT1  |  BT2  |  BT3    |  BT4 | #  |    |    |    |    |    |  |
-// // |    |      | MUTE | VOL_D |  VOL_U  |      | #  |    |    |    |    |    |  |
-// // |        |       | PREV | NEXT  |  PLAY   |      | #  |    |    |    |    |    |  |
+// // |    |      |  |  |    |      | #  |    |    |    |    |    |  |
+// // |        |       |  |   |  P   |      | #  |    |    |    |    |    |  |
 // //                             |       |         |      | #  |    |  HELD |    | 
                         bindings = <
    &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans &trans  &trans &trans &trans &trans
-   &trans &trans  &kp K_MUTE  &kp K_VOL_DN   &kp VOL_UP   &trans    &trans &trans  &trans &trans &trans &trans 
-   &trans &trans  &kp K_PREV &kp K_NEXT &kp K_PP   &trans                  &trans &trans  &trans  &trans &trans &trans
-                             &trans &trans   &trans   &trans   &trans    &trans
+   &trans &trans  &trans  &trans   &trans   &trans                   &trans &trans  &trans &trans &trans &trans 
+   &trans &trans   &trans &trans   &trans                          &trans &trans  &trans  &trans &trans &trans
+                             &trans  &trans   &trans   &trans   &trans    &trans
                         >;
                 };
                 
-                // fn {
+                fn {
 // // -----------------------------------------------------------------------------------------
 // // |        |   F12     |  F7  |   F8   |  F9  |         | #  |    |    |      |    |    |  |
 // // | LCTRL  |   F11     |  F4  |   F5   |  F6  |         | #  |    |    |      |    |    |  |
 // // | LSHFT  |   F10     |  F1  |   F2   |  F3  |         | #  |    |    |      |    |    |  |
 // //                        |        |      |         | #  |    |    | HELD | 
-                        // bindings = <
-   // &trans    &kp F12 &kp F7 &kp F8 &kp F9 &trans   &trans &trans &trans &trans &trans &trans
-   // &kp LCTRL &kp F11 &kp F4 &kp F5 &kp F6 &trans   &trans &trans &trans &trans &trans &trans
-   // &kp LSHFT &kp F10 &kp F1 &kp F2 &kp F3 &trans   &trans &trans  &trans  &trans &trans &trans
-                           // &trans &trans  &trans   &trans   &trans    &trans
-                        // >;
-                //};
+                        bindings = <
+   &trans    &kp F12 &kp F7 &kp F8 &kp F9 &trans   &trans &trans &trans &trans &trans &trans
+   &kp LCTRL &kp F11 &kp F4 &kp F5 &kp F6 &trans   &trans &trans &trans &trans &trans &trans
+   &kp LSHFT &kp F10 &kp F1 &kp F2 &kp F3 &trans   &trans &trans  &trans  &trans &trans &trans
+                           &trans &trans  &trans   &trans   &trans    &trans
+                        >;
+                };
          };
 };
                 
