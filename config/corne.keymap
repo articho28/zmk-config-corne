@@ -48,27 +48,27 @@
                 
                 num {
 // // -----------------------------------------------------------------------------------------
-// // |  ESC  |  1   |  2    | 3    |  4    | 5  |  #   |     6     |  7   |  8    |  9  |  0  |  ~    |
-// // |  CTRL | LGUI | LALT | LSHFT | LCTRL |    |  #   |     ^     |  [   |  ]    |  -  |  =  |   \   |
-// // |  SHFT |      |      |       |       |    |  #   |     $     |  *   |  ,    |  .  |  /  |  SHFT |
+// // |  ESC  |  1   |  2   |  3    |  4    | 5  |  #   |     6     |  7   |  8    |  9  |  0  |   `   |
+// // |  CTRL | LGUI | LALT | LSHFT | LCTRL |    |  #   |     $     |  [   |  ]    |  -  |  =  |   \   |
+// // |  SHFT |      |      |       |       |    |  #   |     ^     |  *   |  ,    |  .  |  /  |  SHFT |
 // //                       |       | HELD  |    |  #   | ENT/SHFT  | BSPC | LGUI  |
                         bindings = <
-   &kp ESC    &kp N1   &kp N2   &kp N3    &kp N4    &kp N5          &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp TILDE
-   &kp LCTRL  &kp LGUI &kp LALT &kp LSHFT &kp LCTRL &trans          &kp CARET  &kp LBKT  &kp RBKT  &kp MINUS &kp EQUAL &trans
-   &kp LSHFT  &trans   &trans   &trans    &trans    &trans          &kp DLLR   &kp ASTRK &kp COMMA &kp DOT &kp FSLH &kp LSHFT
+   &kp ESC   &kp N1   &kp N2   &kp N3    &kp N4    &kp N5           &kp N6     &kp N7    &kp N8    &kp N9    &kp N0     &kp GRAVE
+   &kp LCTRL  &kp LGUI &kp LALT &kp LSHFT &kp LCTRL &trans          &kp DLLR   &kp LBKT  &kp RBKT  &kp MINUS &kp EQUAL &trans
+   &kp LSHFT  &trans   &trans   &trans    &trans    &trans          &kp CARET  &kp ASTRK &kp COMMA &kp DOT &kp FSLH &kp LSHFT
                                 &trans    &trans    &trans          &lt LSHFT RET  &kp BSPC &kp LGUI
                         >;
                 };
 
                 nav {
 // // -----------------------------------------------------------------------------------------
-// // | ESC   |    |    |    |    |      |  #   |        |   INS  |  DEL   |  PSCRN   | PG_UP   |  |
-// // | CTRL  | LGUI   |  LALT  | LSHFT    | LCTRL    |      |  #   |  LEFT  |  DOWN  |  UP    |  RIGHT   | PG_DW   |  |
-// // | SHFT  |    |    |    |    |      |  #   |        |  HOME  |  END   |          |         |  |
-// //              |    |     | HELD     |  #   |        |        |        |
+// // | ESC   |        |        |        |          |      |  #   |        |   INS  |  DEL   |  PSCRN   | PG_UP   |  |
+// // | CTRL  | LGUI   |  LALT  | LSHFT  | LCTRL    |      |  #   |  LEFT  |  DOWN  |  UP    |  RIGHT   | PG_DW   |  |
+// // | SHFT  |        |        |        |          |      |  #   |        |  HOME  |  END   |          |         |  |
+// //                           |        |          | HELD |  #   |        |        |        |
                         bindings = <
-   &kp ESC    &trans       &trans       &trans       &trans       &trans         &trans &kp INS &kp DEL &kp PSCRN &kp PG_UP &trans
-   &kp LCTRL  &kp LGUI       &kp LALT       &kp LSHFT       &kp LCTRL       &trans         &kp LEFT  &kp DOWN  &kp UP &kp RIGHT &kp PG_DN  &trans
+   &kp ESC    &trans       &trans       &trans       &trans       &trans         &trans    &kp INS   &kp DEL &kp PSCRN &kp PG_UP  &trans
+   &kp LCTRL  &kp LGUI     &kp LALT     &kp LSHFT    &kp LCTRL    &trans         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &kp PG_DN  &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans  &kp HOME  &kp END &trans &trans &trans
                                         &trans       &trans       &trans         &trans  &trans   &trans
                         >;
@@ -76,29 +76,29 @@
 
                 sym {
 // // -----------------------------------------------------------------------------------------
-// // | ESC      |    |    |    |    |                     | #  |  `  |  &  |  *  |  (  |  )  | BSPC |
-// // | CTRL     | LGUI   | LALT  |  LSHFT  | LCTRL   |    | #  |  [  |  $  |  %  |  ^  |  \   |  '   |
-// // | SHFT |   |    |    |    |                         | #  |  ]  |  !  |  @  |  #  |  "|" |  ~   |
-// //            |    |    |                         | #  | _  |  HELD  |    | 
+// // | ESC      |  !    |  @    |   #     |   $     | %       | #  |  ^  |  &   |  *  |  (  |  )   | BSPC |
+// // | CTRL     | LGUI  | LALT  |  LSHFT  | LCTRL   |         | #  |  -  |  [   |  ]  |  {  |  }   | "|"  |
+// // | SHFT     |       |       |         |         |         | #  |  =  |  +   |  ,  |  .  |  /   | SHFT |
+// //                            |   ALT   | ESC     | SPACE   | #  |     | HELD |     | 
                         bindings = <
-   &kp  ESC  &trans   &trans &trans   &trans   &trans      &kp GRAVE &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &kp LGUI   &kp LALT &kp LSHFT   &kp LCTRL   &trans      &kp LBKT &kp DLLR &kp PRCNT  &kp CARET &kp BSLH &kp SQT 
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp RBKT &kp EXCL &kp AT &kp HASH &kp PIPE &kp TILDE
-                             &trans   &trans   &trans      &trans   &trans    &trans
+   &kp  ESC  &kp EXCL   &kp AT   &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
+   &kp LCTRL &kp LGUI   &kp LALT &kp LSHFT   &kp LCTRL   &trans      &kp MINUS &kp LBKT  &kp RBKT  &kp LBRC &kp RBRC &kp PIPE 
+   &kp LSHFT &trans     &trans   &trans      &trans      &trans      &kp EQUAL &kp PLUS  &kp COMMA &kp DOT  &kp FSLH &kp LSHFT
+                                 &kp LALT    &kp ESC     &kp SPACE   &trans    &trans    &trans
                         >;
                 };
                 
                 fn {
 // // -----------------------------------------------------------------------------------------
-// // | TAB    |   F12     |  F7  |   F8   |  F9  |         | #  | BT0  | BT1    | BT2    | BT3  | BT4  | BTCLR |
-// // | LCTRL  |   F11     |  F4  |   F5   |  F6  |         | #  |      | LCTRL  | LSHFT  | LALT | LGUI |       |
+// // | TAB    |   F12     |  F7  |   F8   |  F9  |         | #  | BT0  | BT1    | BT2    | BT3  | BT4  | BT5   |
+// // | LCTRL  |   F11     |  F4  |   F5   |  F6  |         | #  |      | LCTRL  | LSHFT  | LALT | LGUI | BTCLR | 
 // // | LSHFT  |   F10     |  F1  |   F2   |  F3  |         | #  |      |        |        |      |      |       |
 // //                             |        |      |         | #  |      |        | HELD | 
                         bindings = <
-   &kp TAB  &kp F12 &kp F7 &kp F8 &kp F9 &trans     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR   
-   &kp LCTRL &kp F11 &kp F4 &kp F5 &kp F6 &trans   &trans &kp LCTRL &kp LSHFT &kp LALT &kp LGUI &trans
-   &kp LSHFT &kp F10 &kp F1 &kp F2 &kp F3 &trans   &trans &trans  &trans  &trans &trans &kp LSHFT
-                           &kp LALT &trans  &trans   &trans   &trans  &trans
+   &kp TAB  &kp F12 &kp F7 &kp F8 &kp F9 &trans     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
+   &kp LCTRL &kp F11 &kp F4 &kp F5 &kp F6 &trans    &trans &kp LCTRL &kp LSHFT &kp LALT &kp LGUI &bt BT_CLR
+   &kp LSHFT &kp F10 &kp F1 &kp F2 &kp F3 &trans    &trans &trans  &trans  &trans &trans &kp LSHFT
+                           &kp LALT &trans  &trans  &trans   &trans  &trans
                         >;
                 };
          };
