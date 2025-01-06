@@ -90,15 +90,15 @@
                 
                 fn {
 // // -----------------------------------------------------------------------------------------
-// // |        |   F12     |  F7  |   F8   |  F9  |         | #  | BT0  | BT1 | BT2  | BT3 | BT4 | BTCLR |
-// // | LCTRL  |   F11     |  F4  |   F5   |  F6  |         | #  |    | LCTRL   | LSHFT   | LALT   | LGUI   |  |
-// // | LSHFT  |   F10     |  F1  |   F2   |  F3  |         | #  |    |    |      |    |    |  |
-// //                        |        |      |         | #  |    |    | HELD | 
+// // | TAB    |   F12     |  F7  |   F8   |  F9  |         | #  | BT0  | BT1    | BT2    | BT3  | BT4  | BTCLR |
+// // | LCTRL  |   F11     |  F4  |   F5   |  F6  |         | #  |      | LCTRL  | LSHFT  | LALT | LGUI |       |
+// // | LSHFT  |   F10     |  F1  |   F2   |  F3  |         | #  |      |        |        |      |      |       |
+// //                             |        |      |         | #  |      |        | HELD | 
                         bindings = <
    &kp TAB  &kp F12 &kp F7 &kp F8 &kp F9 &trans   &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
    &kp LCTRL &kp F11 &kp F4 &kp F5 &kp F6 &trans   &trans &kp LCTRL &kp LSHFT &kp LALT &kp LGUI &trans
    &kp LSHFT &kp F10 &kp F1 &kp F2 &kp F3 &trans   &trans &trans  &trans  &trans &trans &kp LSHFT
-                           &kp ALT &trans  &trans   &trans   &trans    &trans
+                           &kp ALT &trans  &trans   &trans   &trans  &trans
                         >;
                 };
          };
