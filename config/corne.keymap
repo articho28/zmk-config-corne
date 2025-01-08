@@ -10,10 +10,11 @@
 
 // Layer definitions
 #define BASE 0
-#define NUM 1
-#define NAV 2
-#define SYM 3
-#define FN 4
+#define BASE_MACOS 1
+#define NUM 2
+#define NAV 3
+#define SYM 4
+#define FN 5
 
 // Behaviors config
 &mt {
@@ -45,6 +46,20 @@
                  &kp LALT &lt NUM ESC &lt NAV SPACE        &mt LSHFT RET &lt SYM MINUS &lt FN RGUI
                         >;
                 };
+                macos {
+        // --------------------------------------------------------------------------------------------------------------- 
+        // | TAB  |  Q  |  W  |    E    |    R    |     T     |      |     Y    |     U      |  I     |  O  |  P  |  BSPC |
+        // | CTRL |  A  |  S  |    D    |    F    |     G     |      |     H    |     J      |  K     |  L  |  ;  |  '    |
+        // | SHFT |  Z  |  X  |    C    |    V    |     B     |      |     N    |     M      |  ,     |  .  |  /  | SHFT  |
+        //                    | LGUI | ESC/NUM | SPACE/NAV |      | ENT/SHFT | MINUS/SYM | ALT/FN |
+                                
+                                bindings = <
+        &kp TAB   &kp Q &kp W &kp E &kp R   &kp T               &kp Y &kp U   &kp I     &kp O   &kp P    &kp BSPC 
+        &kp LCTRL &kp A &kp S &kp D &kp F   &kp G               &kp H &kp J   &kp K     &kp L   &kp SEMI &kp SQT
+        &kp LSHFT &kp Z &kp X &kp C &kp V   &kp B               &kp N &kp M   &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                        &kp LGUI &lt NUM ESC &lt NAV SPACE        &mt LSHFT RET &lt SYM MINUS &lt FN RALT 
+                                >;
+                        };
                 
                 num {
 // // -----------------------------------------------------------------------------------------
@@ -92,12 +107,12 @@
 // // -----------------------------------------------------------------------------------------
 // // | TAB    |           |  F7  |   F8   |  F9  |   F12      | #  | BT0  | BT1    | BT2    | BT3  | BT4  | BT5   |
 // // | LCTRL  |           |  F4  |   F5   |  F6  |   F11      | #  |      | LCTRL  | LSHFT  | LALT | LGUI | BTCLR | 
-// // | LSHFT  |           |  F1  |   F2   |  F3  |   F10      | #  |      |        |        |      |      |       |
+// // | LSHFT  |           |  F1  |   F2   |  F3  |   F10      | #  |  BASE  |   MACOS     |        |      |      |       |
 // //                             |        |      |            | #  |      |        | HELD | 
                         bindings = <
    &kp TAB   &trans &kp F7 &kp F8 &kp F9 &kp F12     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
    &kp LCTRL &trans &kp F4 &kp F5 &kp F6 &kp F11   &trans &kp LCTRL &kp LSHFT &kp LALT &kp LGUI &bt BT_CLR
-   &kp LSHFT &trans &kp F1 &kp F2 &kp F3 &kp F10    &trans &trans  &trans  &trans &trans &kp LSHFT
+   &kp LSHFT &trans &kp F1 &kp F2 &kp F3 &kp F10    &to BASE &to BASE_MACOS  &trans  &trans &trans &kp LSHFT
                            &kp LALT &trans  &trans  &trans   &trans  &trans
                         >;
                 };
