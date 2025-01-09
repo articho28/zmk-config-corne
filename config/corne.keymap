@@ -64,14 +64,14 @@
                 num {
 // // -----------------------------------------------------------------------------------------
 // // |  ESC  |  1   |  2   |  3    |  4    | 5  |  #   |     6     |  7   |  8    |  9  |  0  |   BSPC    |
-// // |  CTRL | LGUI | LALT | LSHFT | LCTRL |    |  #   |     $     |  [   |  ]    |  -  |  =  |   \       |
+// // |  CTRL | LGUI | LALT | LSHFT | LCTRL |    |  #   |     $     |  [   |  ]    |  -  |  `  |   \       |
 // // |  SHFT |      |      |       |       |    |  #   |     ^     |  *   |  ,    |  .  |  /  |  SHFT     |
-// //                       |       | HELD  |    |  #   | ENT/SHFT  |   `  | LGUI  |
+// //                       |       | HELD  |    |  #   | ENT/SHFT  |  =   | LGUI  |
                         bindings = <
    &kp ESC   &kp N1   &kp N2   &kp N3    &kp N4    &kp N5           &kp N6     &kp N7    &kp N8    &kp N9    &kp N0     &kp BSPC
-   &kp LCTRL  &kp LGUI &kp LALT &kp LSHFT &kp LCTRL &trans          &kp DLLR   &kp LBKT  &kp RBKT  &kp MINUS &kp EQUAL  &kp BSLH
+   &kp LCTRL  &kp LGUI &kp LALT &kp LSHFT &kp LCTRL &trans          &kp DLLR   &kp LBKT  &kp RBKT  &kp MINUS &kp GRAVE  &kp BSLH
    &kp LSHFT  &trans   &trans   &trans    &trans    &trans          &kp CARET  &kp ASTRK &kp COMMA &kp DOT &kp FSLH &kp LSHFT
-                                &trans    &trans    &trans          &mt LSHFT RET  &kp GRAVE &kp LGUI
+                                &trans    &trans    &trans          &mt LSHFT RET  &kp EQUAL &kp LGUI
                         >;
                 };
 
