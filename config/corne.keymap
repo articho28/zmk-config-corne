@@ -92,12 +92,12 @@
                 sym {
 // // -----------------------------------------------------------------------------------------
 // // | ESC      |  !    |  @    |   #     |   $     | %       | #  |  ^  |  &   |  *  |  (  |  )   |  MINUS |
-// // | CTRL     | LGUI  | LALT  |  LSHFT  | LCTRL   |         | #  |  `  |  +   |  =  |  [  |  ]   |  "|"  |
+// // | CTRL     | LGUI  | LALT  |  LSHFT  | LCTRL   |         | #  |  `  |  =   |  +  |  [  |  ]   |  "|"  |
 // // | SHFT     |       |       |         |         |         | #  |     |  -   |  ,  |  .  |  /   | SHFT  |
 // //                            |   ALT   | ESC     | SPACE   | #  |     | HELD |     | 
                         bindings = <
    &kp  ESC  &kp EXCL   &kp AT   &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp MINUS
-   &kp LCTRL &kp LGUI   &kp LALT &kp LSHFT   &kp LCTRL   &trans      &kp GRAVE &kp PLUS &kp EQUAL  &kp LBKT &kp RBKT &kp PIPE 
+   &kp LCTRL &kp LGUI   &kp LALT &kp LSHFT   &kp LCTRL   &trans      &kp GRAVE &kp EQUAL &kp PLUS  &kp LBKT &kp RBKT &kp PIPE 
    &kp LSHFT &trans     &trans   &trans      &trans      &trans      &trans    &kp MINUS  &kp COMMA &kp DOT  &kp FSLH &kp LSHFT
                                  &kp LALT    &kp ESC     &kp SPACE   &trans    &trans    &trans
                         >;
