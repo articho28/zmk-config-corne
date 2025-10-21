@@ -78,13 +78,13 @@
 
                 nav {
 // // -----------------------------------------------------------------------------------------
-// // | ESC   |        |        |        |          |      |  #   |        |   INS  |  DEL   |  PSCRN   | PG_UP   |  |
-// // | CTRL  | LGUI   |  LALT  | LSHFT  | LCTRL    |      |  #   |  LEFT  |  DOWN  |  UP    |  RIGHT   | PG_DW   |  |
-// // | SHFT  |        |        |        |          |      |  #   |        |  HOME  |  END   |          |         |  |
+// // | ESC   |        |        |        |          |      |  #   |        |  PG_DN |  PG_UP |  PSCRN   | INS  | DEL |
+// // | CTRL  | LGUI   |  LALT  | LSHFT  | LCTRL    |      |  #   |  LEFT  |  DOWN  |  UP    |  RIGHT   |      |     |
+// // | SHFT  |        |        |        |          |      |  #   |        |  HOME  |  END   |          |      |     |
 // //                           |        |          | HELD |  #   |        |        |        |
                         bindings = <
-   &kp ESC    &trans       &trans       &trans       &trans       &trans         &trans    &kp INS   &kp DEL &kp PSCRN &kp PG_UP  &trans
-   &kp LCTRL  &kp LGUI     &kp LALT     &kp LSHFT    &kp LCTRL    &trans         &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &kp PG_DN  &trans
+   &kp ESC    &trans       &trans       &trans       &trans       &trans         &trans    &kp PG_DN &kp PG_UP &kp PSCRN &kp INS &kp DEL
+   &kp LCTRL  &kp LGUI     &kp LALT     &kp LSHFT    &kp LCTRL    &trans         &kp LEFT  &kp DOWN  &kp UP  &trans &trans  &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans  &kp HOME  &kp END &trans &trans &trans
                                         &trans       &trans       &trans         &trans  &trans   &trans
                         >;
