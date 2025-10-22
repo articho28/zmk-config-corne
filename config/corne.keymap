@@ -84,8 +84,8 @@
 // //                           |        |          | HELD |  #   |        |        |        |
                         bindings = <
    &kp ESC    &trans       &trans       &trans       &trans       &trans         &trans    &kp PG_DN &kp PG_UP &kp PSCRN &kp INS &kp DEL
-   &kp LCTRL  &kp LGUI     &kp LALT     &kp LSHFT    &kp LCTRL    &trans         &kp LEFT  &kp DOWN  &kp UP  &trans &trans  &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans  &kp HOME  &kp END &trans &trans &trans
+   &kp LCTRL  &kp LGUI     &kp LALT     &kp LSHFT    &kp LCTRL    &trans         &kp LEFT  &kp DOWN  &kp UP &kp RIGHT &trans  &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans    &kp HOME  &kp END &trans &trans &trans
                                         &trans       &trans       &trans         &trans  &trans   &trans
                         >;
                 };
