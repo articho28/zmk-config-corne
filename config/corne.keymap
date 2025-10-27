@@ -37,13 +37,13 @@
 // | TAB  |  Q  |  W  |    E    |    R    |     T     |      |     Y    |     U      |  I     |  O  |  P  |  MINUS |
 // | CTRL |  A  |  S  |    D    |    F    |     G     |      |     H    |     J      |  K     |  L  |  ;  |   '    |
 // | SHFT |  Z  |  X  |    C    |    V    |     B     |      |     N    |     M      |  ,     |  .  |  /  | SHFT   |
-//                        | TAB/ALT | ESC/NUM | SPACE/NAV |      | ENT/CTRL | BSPC/SYM | GUI/FN |
+//                        | TAB/ALT | ESC/NUM | SPACE/NAV |      | ENT/CTRL | BSPC/SYM | MINUS/FN |
                         
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R   &kp T               &kp Y &kp U   &kp I     &kp O   &kp P    &kp MINUS 
    &kp LCTRL &kp A &kp S &kp D &kp F   &kp G               &kp H &kp J   &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V   &kp B               &kp N &kp M   &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                 &mt LALT TAB &lt NUM ESC &lt NAV SPACE        &mt LCTRL RET &lt SYM BSPC &lt FN RGUI
+                 &mt LALT TAB &lt NUM ESC &lt NAV SPACE        &mt LCTRL RET &lt SYM BSPC &lt FN MINUS
                         >;
                 };
 
@@ -66,12 +66,12 @@
 // // -----------------------------------------------------------------------------------------
 // // |  ESC  |  1   |  2   |  3    |  4    | 5  |  #   |     6     |  7   |  8    |  9  |  0  |   -       |
 // // |  CTRL | LGUI | LALT | LSHFT | LCTRL |    |  #   |     ^     |  [   |  ]    |  $  |  +  |   \       |
-// // |  SHFT |      |      |       |       |    |  #   |     *     |  {   |  }    |  .  |  /  |  SHFT     |
+// // |  SHFT |      |      |       |       |    |  #   |     *     |  (   |  )    |  .  |  /  |  SHFT     |
 // //                       |       | HELD  |    |  #   | ENT/SHFT  |  BSPC   | LGUI  |
                         bindings = <
    &kp ESC   &kp N1   &kp N2   &kp N3    &kp N4    &kp N5           &kp N6      &kp N7    &kp N8   &kp N9   &kp N0    &kp MINUS
    &kp LCTRL  &kp LGUI &kp LALT &kp LSHFT &kp LCTRL &trans          &kp CARET   &kp LBKT  &kp RBKT &kp DLLR &kp PLUS  &kp BSLH
-   &kp LSHFT  &trans   &trans   &trans    &trans    &trans          &kp ASTRK  &kp LBRC &kp RBRC &kp DOT &kp FSLH &kp LSHFT
+   &kp LSHFT  &trans   &trans   &trans    &trans    &trans          &kp ASTRK  &kp LPAR &kp RPAR &kp DOT &kp FSLH &kp LSHFT
                                 &trans    &trans    &trans          &mt LSHFT RET  &kp BSPC &kp LGUI
                         >;
                 };
@@ -93,8 +93,8 @@
                 sym {
 // // -----------------------------------------------------------------------------------------
 // // | ESC      |  !    |  @    |   #     |   $     | %       | #  |  ^  |  &   |  *  |  (  |  )   |  MINUS |
-// // | CTRL     | LGUI  | LALT  |  LSHFT  | LCTRL   |         | #  |  `  |  =   |  +  |  [  |  ]   |  "|"  |
-// // | SHFT     |       |       |         |         |         | #  |     |  -   |  ,  |  .  |  /   | SHFT  |
+// // | CTRL     | LGUI  | LALT  |  LSHFT  | LCTRL   |         | #  |  `  |  =   |  +  |  [  |  ]   |  "|"   |
+// // | SHFT     |       |       |         |         |         | #  |     |  -   |  ,  |  .  |  /   |  SHFT  |
 // //                            |   ALT   | ESC     | SPACE   | #  |     | HELD |     | 
                         bindings = <
    &kp  ESC  &kp EXCL   &kp AT   &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp MINUS
