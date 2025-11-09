@@ -79,7 +79,7 @@
                 nav {
 // // -----------------------------------------------------------------------------------------
 // // | ESC   |        |        |        |          |      |  #   |        |  PG_UP |  PG_DN |  PSCRN   | INS  | DEL |
-// // | CTRL  | LGUI   |  LALT  | LSHFT  | LCTRL    |      |  #   |  LEFT  |  DOWN  |  UP    |  RIGHT   |      |     |
+// // | CTRL  |  LGUI  |  LALT  | LSHFT  |   LCTRL  |      |  #   |  LEFT  |  DOWN  |  UP    |  RIGHT   |      |     |
 // // | SHFT  |        |        |        |          |      |  #   |        |  HOME  |  END   |          |      |     |
 // //                           |        |          | HELD |  #   |        |        |        |
                         bindings = <
