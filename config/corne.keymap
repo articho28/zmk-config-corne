@@ -34,7 +34,7 @@
                 compatible = "zmk,keymap";
                 default_layer {
 // ----------------------------------------------------------------------------------------------------------------- 
-// | TAB  |  Q  |  W  |    E    |    R    |     T     |      |     Y    |     U      |  I     |  O  |  P  |  UNDERSCORE |
+// | TAB  |  Q  |  W  |    E    |    R    |     T     |      |     Y    |     U      |  I     |  O  |  P  |  _          |
 // | CTRL |  A  |  S  |    D    |    F    |     G     |      |     H    |     J      |  K     |  L  |  ;  |   '         |
 // | SHFT |  Z  |  X  |    C    |    V    |     B     |      |     N    |     M      |  ,     |  .  |  /  | SHFT        |
 //                        | TAB/ALT | ESC/NUM | SPACE/NAV |      | ENT/CTRL | BSPC/SYM | MINUS/FN |
@@ -49,7 +49,7 @@
 
                 macos {
 // -----------------------------------------------------------------------------------------------------------------
-// | TAB  |  Q  |  W  |    E    |    R    |     T     |      |     Y      |     U      |  I     |  O  |  P  |  UNDERSCORE  |
+// | TAB  |  Q  |  W  |    E    |    R    |     T     |      |     Y      |     U      |  I     |  O  |  P  |  _  |
 // | CTRL |  A  |  S  |    D    |    F    |     G     |      |     H      |     J      |  K     |  L  |  ;  |  '      |
 // | SHFT |  Z  |  X  |    C    |    V    |     B     |      |     N      |     M      |  ,     |  .  |  /  |  SHFT   |
 //                       | TAB/LGUI | ESC/NUM | SPACE/NAV |      |  ENT/LGUI  |   BSPC/SYM | `/FN   | 
@@ -64,15 +64,15 @@
                 
                 num {
 // // -----------------------------------------------------------------------------------------
-// // |  ESC  |  1   |  2   |  3    |  4    | 5  |  #   |     6     |  7   |  8    |  9  |  0  |   _       |
-// // |  CTRL | LGUI | LALT | LSHFT | LCTRL |    |  #   |     ^     |  [   |  ]    |  $  |  +  |   \       |
-// // |  SHFT |      |      |       |       |    |  #   |     *     |  (   |  )    |  .  |  /  |  SHFT     |
-// //                       |       | HELD  |    |  #   | ENT/SHFT  |  BSPC   | LGUI  |
+// // |  ESC  |  1   |  2   |  3    |  4    |  5  |  #   |     6     |  7   |  8    |  9  |  0  |   =       |
+// // |  CTRL | LGUI | LALT |  [    |  ]    |  +  |  #   |     0     |  4   |  5    |  6  |  $  |   \       |
+// // |  SHFT |      |      |  (    |  )    |  -  |  #   |     *     |  1   |  2    |  3  |  /  |  SHFT     |
+// //                       |       | HELD  |     |  #   | ENT/CTRL  |  BSPC   | LGUI  |
                         bindings = <
-   &kp ESC   &kp N1   &kp N2   &kp N3    &kp N4    &kp N5           &kp N6      &kp N7    &kp N8   &kp N9   &kp N0    &kp UNDERSCORE
-   &kp LCTRL  &kp LGUI &kp LALT &kp LSHFT &kp LCTRL &trans          &kp CARET   &kp LBKT  &kp RBKT &kp DLLR &kp PLUS  &kp BSLH
-   &kp LSHFT  &trans   &trans   &trans    &trans    &trans          &kp ASTRK  &kp LPAR &kp RPAR &kp DOT &kp FSLH &kp LSHFT
-                                &trans    &trans    &trans          &mt LSHFT RET  &kp BSPC &kp LGUI
+   &kp ESC   &kp N1   &kp N2   &kp N3    &kp N4     &kp N5           &kp N6   &kp N7    &kp N8   &kp N9   &kp N0  &kp EQUAL
+   &kp LCTRL  &kp LGUI &kp LALT &kp LBKT &kp RBKT   &kp PLUS          &kp N0   &kp N4  &kp N5 &kp N6 &kp DLLR &kp BSLH
+   &kp LSHFT  &trans   &trans   &kp LPAR  &kp RPAR  &kp MINUS          &kp ASTRK  &kp N1 &kp N2 &kp N3 &kp FSLH &kp LSHFT
+                                &trans    &trans    &trans          &mt LCTRL RET  &kp BSPC &kp LGUI
                         >;
                 };
 
