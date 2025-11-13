@@ -37,19 +37,19 @@
 // | TAB  |  Q  |  W  |    E    |    R    |     T     |      |     Y    |     U      |  I     |  O  |  P  |  _          |
 // | CTRL |  A  |  S  |    D    |    F    |     G     |      |     H    |     J      |  K     |  L  |  ;  |   '         |
 // | SHFT |  Z  |  X  |    C    |    V    |     B     |      |     N    |     M      |  ,     |  .  |  /  | SHFT        |
-//                        | TAB/ALT | ESC/NUM | SPACE/NAV |      | ENT/CTRL | BSPC/SYM | MINUS/FN |
+//                        | LGUI/ALT | ESC/NUM | SPACE/NAV |      | ENT/CTRL | BSPC/SYM | MINUS/FN |
                         
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R   &kp T               &kp Y &kp U   &kp I     &kp O   &kp P    &kp UNDERSCORE
    &kp LCTRL &kp A &kp S &kp D &kp F   &kp G               &kp H &kp J   &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V   &kp B               &kp N &kp M   &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                 &mt LALT TAB &lt NUM ESC &lt NAV SPACE        &mt LCTRL RET &lt SYM BSPC &lt FN MINUS
+                 &mt LALT LGUI &lt NUM ESC &lt NAV SPACE        &mt LCTRL RET &lt SYM BSPC &lt FN MINUS
                         >;
                 };
 
                 macos {
 // -----------------------------------------------------------------------------------------------------------------
-// | TAB  |  Q  |  W  |    E    |    R    |     T     |      |     Y      |     U      |  I     |  O  |  P  |  _  |
+// | TAB  |  Q  |  W  |    E    |    R    |     T     |      |     Y      |     U      |  I     |  O  |  P  |  _      |
 // | CTRL |  A  |  S  |    D    |    F    |     G     |      |     H      |     J      |  K     |  L  |  ;  |  '      |
 // | SHFT |  Z  |  X  |    C    |    V    |     B     |      |     N      |     M      |  ,     |  .  |  /  |  SHFT   |
 //                       | TAB/LGUI | ESC/NUM | SPACE/NAV |      |  ENT/LGUI  |   BSPC/SYM | `/FN   | 
@@ -80,12 +80,12 @@
                 nav {
 // // -----------------------------------------------------------------------------------------
 // // | ESC   |        |        |        |          |      |  #   |        |  PG_UP |  PG_DN |  PSCRN   | INS  | DEL |
-// // | CTRL  |  LGUI  |  LALT  | LSHFT  |   LCTRL  |      |  #   |  LEFT  |  DOWN  |  UP    |  RIGHT   |      |     |
+// // | CTRL  |  LGUI  |  LALT  | LSHFT  |   LCTRL  |      |  #   |  LEFT  |  DOWN  |  UP    |  RIGHT   | TAB  |     |
 // // | SHFT  |        |        |        |          |      |  #   |        |  HOME  |  END   |          |      |     |
 // //                           |        |          | HELD |  #   |        |        |        |
                         bindings = <
    &kp ESC    &trans       &trans       &trans       &trans       &trans         &trans    &kp PG_UP &kp PG_DN &kp PSCRN &kp INS &kp DEL
-   &kp LCTRL  &kp LGUI     &kp LALT     &kp LSHFT    &kp LCTRL    &trans         &kp LEFT  &kp DOWN  &kp UP &kp RIGHT &trans  &trans
+   &kp LCTRL  &kp LGUI     &kp LALT     &kp LSHFT    &kp LCTRL    &trans         &kp LEFT  &kp DOWN  &kp UP &kp RIGHT &kp TAB  &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans    &kp HOME  &kp END &trans &trans &trans
                                         &trans       &trans       &trans         &trans  &trans   &trans
                         >;
