@@ -72,7 +72,7 @@
 
                         bindings = <
    &kp ESC   &kp LT  &kp GT  &kp LPAR   &kp RPAR    &kp PRCNT          &kp CARET   &kp N7    &kp N8   &kp N9   &kp EQUAL &kp UNDERSCORE
-   &kp LCTRL  &kp LGUI &kp LALT &kp LBKT &kp RBKT   &kp HASH          &kp N0   &kp N4  &kp N5 &kp N6 &kp DLLR &kp BSLH
+   &kp LCTRL  &kp LGUI &kp LALT &kp LBKT &kp RBKT   &kp HASH           &kp PLUS   &kp N4  &kp N5 &kp N6 &kp DLLR &kp BSLH
    &kp LSHFT  &kp GRAVE   &kp TILDE  &kp LBRC  &kp RBRC  &trans          &kp ASTRK  &kp N1 &kp N2 &kp N3 &kp FSLH &kp LSHFT
                                 &trans    &trans    &trans          &mt LCTRL RET  &kp N0 &kp MINUS
                         >;
@@ -128,7 +128,7 @@
 // //                           |              |            |                     | #  |        |          | HELD   | 
                         bindings = <
    &kp TAB   &trans &trans &trans &trans &trans     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
-   &kp LCTRL &trans &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_PLAY_PAUSE   &trans &kp LCTRL &kp LSHFT &kp LALT &kp LGUI &bt BT_CLR
+   &kp LCTRL &trans &kp K_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_PLAY_PAUSE   &trans &kp LCTRL &kp LSHFT &kp LALT &kp LGUI &bt BT_CLR
    &kp LSHFT &trans &trans &trans &trans &trans  &to BASE &to BASE_MACOS  &trans  &trans &trans &kp LSHFT
                            &trans &trans  &trans  &trans   &trans  &trans
                         >;
