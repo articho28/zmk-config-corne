@@ -66,13 +66,13 @@
                 num {
 // // ----------------------------------------------------------------------------------------
 // // |  ESC  |  <   |  >   |  (    |  )    |  %  |  #   |     ^     |  7   |  8    |  9  |  =  |   _       |
-// // |  CTRL | LGUI | LALT |  [    |  ]    |  =  |  #   |     +     |  4   |  5    |  6  |  $  |   \       |
+// // |  CTRL | LGUI | LALT |  [    |  ]    |  #  |  #   |     +     |  4   |  5    |  6  |  $  |   \       |
 // // |  SHFT |  `   |  ~   |  {    |  }    |     |  #   |     *     |  1   |  2    |  3  |  /  |  SHFT     |
 // //                       |       | HELD  |     |  #   | ENT/CTRL  |  0   |  -    |
 
                         bindings = <
    &kp ESC   &kp LT  &kp GT  &kp LPAR   &kp RPAR    &kp PRCNT          &kp CARET   &kp N7    &kp N8   &kp N9   &kp EQUAL &kp UNDERSCORE
-   &kp LCTRL  &kp LGUI &kp LALT &kp LBKT &kp RBKT   &kp EQUAL          &kp N0   &kp N4  &kp N5 &kp N6 &kp DLLR &kp BSLH
+   &kp LCTRL  &kp LGUI &kp LALT &kp LBKT &kp RBKT   &kp HASH          &kp N0   &kp N4  &kp N5 &kp N6 &kp DLLR &kp BSLH
    &kp LSHFT  &kp GRAVE   &kp TILDE  &kp LBRC  &kp RBRC  &trans          &kp ASTRK  &kp N1 &kp N2 &kp N3 &kp FSLH &kp LSHFT
                                 &trans    &trans    &trans          &mt LCTRL RET  &kp N0 &kp MINUS
                         >;
