@@ -12,8 +12,7 @@
 #define BASE 0
 #define NUM 1
 #define NAV 2
-#define SYM 3
-#define FN 4
+#define FN 3
 
 // Behaviors config
 &mt {
@@ -36,13 +35,13 @@
 // | TAB  |  Q  |  W  |    E    |    R    |     T     |      |     Y     |     U      |  I     |  O  |  P  |  DEL |
 // | ALT  |  A  |  S  |    D    |    F    |     G     |      |     H     |     J      |  K     |  L  |  ;  |   '  |
 // | SHFT |  Z  |  X  |    C    |    V    |     B     |      |     N     |     M      |  ,     |  .  |  /  | SHFT |
-//                    |   LGUI  | ESC/NUM | SPACE/NAV |      | BSPC/CTRL |  RET/SYM   | MINUS/FN |
+//                    |   LGUI  | ESC/NUM | SPACE/NAV |      | BSPC/CTRL |  RET/FN   | MINUS |
                         
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R   &kp T               &kp Y &kp U   &kp I     &kp O   &kp P    &kp DEL
    &kp LALT  &kp A &kp S &kp D &kp F   &kp G               &kp H &kp J   &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V   &kp B               &kp N &kp M   &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                 &kp LGUI &lt NUM ESC &lt NAV SPACE        &mt LCTRL BSPC &lt SYM RET &lt FN MINUS
+                 &kp LGUI &lt NUM ESC &lt NAV SPACE        &mt LCTRL BSPC &lt FN RET &kp MINUS
                         >;
                 };
 
@@ -53,53 +52,39 @@
 // // |  SHFT |  ~   |  <   |   {   |   [   | +  |  #   |  =  |  ]   |  }  |  >  |  `   | SHFT |
 // //                       |       | HELD  |    |  #   | BSPC/CTRL  |   LGUI    |  -   |
                         bindings = <
-   &kp TAB    &kp N1   &kp N2   &kp N3    &kp N4    &kp N5           &kp N6      &kp N7    &kp N8   &kp N9   &kp N0    &kp UNDERSCORE
-   &kp LALT   &kp LGUI &kp LALT &kp LSHFT &kp LCTRL &trans          &kp CARET   &kp LBKT  &kp RBKT &kp DLLR &kp PLUS  &kp BSLH
-   &kp LSHFT  &trans   &trans   &trans    &trans    &trans          &kp ASTRK  &kp LPAR &kp RPAR &kp DOT &kp FSLH &kp LSHFT
-                                &trans    &trans    &trans          &mt LCTRL RET  &kp BSPC &kp LGUI
+   &kp TAB    &kp EXCL  &kp AT    &kp HASH   &kp DLLR   &kp PRCNT        &kp CARET   &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp UNDERSCORE
+   &kp LALT   &kp N1    &kp N2    &kp N3     &kp N4     &kp N5           &kp N6      &kp N7     &kp N8     &kp N9    &kp N0     &kp BSLH
+   &kp LSHFT  &kp TILDE &kp LT    &kp LBRC   &kp LBKT   &kp PLUS         &kp EQUAL   &kp RBKT   &kp RBRC   &kp GT    &kp GRAVE  &kp LSHFT
+                                                                &trans      &trans      &trans           &mt LCTRL BSPC   &kp LGUI   &kp MINUS
                         >;
                 };
 
                 nav {
 // // -----------------------------------------------------------------------------------------
-// // | TAB   |        |        |        |          |      |  #   |        |  PG_UP |  PG_DN |  PSCRN   | INS  | DEL |
-// // | CTRL  |  LGUI  |  LALT  | LSHFT  |   LCTRL  |      |  #   |  LEFT  |  DOWN  |  UP    |  RIGHT   | TAB  |     |
-// // | SHFT  |        |        |        |          |      |  #   |        |  HOME  |  END   |          |      |     |
-// //                           |        |          | HELD |  #   |        |        |        |
+// // | TAB   |        |        |        |          |      |  #   |        |  PG_UP      |  PG_DN     |  PSCRN   | INS  | DEL |
+// // | ALT   |  LGUI  |  LALT  | LSHFT  |   LCTRL  |      |  #   |  LEFT  |  DOWN       |  UP        |  RIGHT   |      |     |
+// // | SHFT  |        |        |        |          |      |  #   |        |  HOME       |  END       |          |      |     |
+// //                           |        |          | HELD |  #   |   TAB  |  RET/LGUI   |   -        |
                         bindings = <
-   &kp TAB    &trans       &trans       &trans       &trans       &trans         &trans    &kp PG_UP &kp PG_DN &kp PSCRN &kp INS &kp DEL
-   &kp LCTRL  &kp LGUI     &kp LALT     &kp LSHFT    &kp LCTRL    &trans         &kp LEFT  &kp DOWN  &kp UP &kp RIGHT &trans  &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans    &kp HOME  &kp END &trans &trans &trans
-                                        &trans       &trans       &trans         &trans  &trans   &trans
+   &kp TAB    &trans       &trans       &trans       &trans       &trans         &trans    &kp PG_UP &kp PG_DN &kp PSCRN &kp INS  &kp DEL
+   &kp LALT   &kp LGUI     &kp LALT     &kp LSHFT    &kp LCTRL    &trans         &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans  &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans    &kp HOME  &kp END   &trans    &trans   &trans
+                                        &trans       &trans       &trans         &kp TAB   &mt LGUI RET   &kp MINUS
                         >;
                 };
 
-                sym {
-// // -----------------------------------------------------------------------------------------
-// // | ESC      |  !    |  @    |   #     |   $     | %       | #  |  ^  |  &   |  *  |  (  |  )   |  UNDERSCORE |
-// // | CTRL     | LGUI  | LALT  |  LSHFT  | LCTRL   |         | #  |  `  |  =   |  +  |  {  |  }   |  "|"   |
-// // | SHFT     |       |       |         |         |         | #  |     |  -   |  ,  |  .  |  /   |  SHFT  |
-// //                            |   ALT   | ESC     | SPACE   | #  |     | HELD |     | 
-                        bindings = <
-   &kp  ESC  &kp EXCL   &kp AT   &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp UNDERSCORE
-   &kp LCTRL &kp LGUI   &kp LALT &kp LSHFT   &kp LCTRL   &trans      &kp GRAVE &kp EQUAL &kp PLUS  &kp LBRC &kp RBRC &kp PIPE 
-   &kp LSHFT &trans     &trans   &trans      &trans      &trans      &trans    &kp MINUS  &kp COMMA &kp DOT  &kp FSLH &kp LSHFT
-                                 &kp LALT    &kp ESC     &kp SPACE   &trans    &trans    &trans
-                        >;
-                };
-                
                 fn {
 // // -----------------------------------------------------------------------------------------
-// // | TAB    |           |  F7  |   F8   |  F9  |   F12      | #  | BT0    | BT1      | BT2    | BT3  | BT4  | BT5   |
-// // | LCTRL  |           |  F4  |   F5   |  F6  |   F11      | #  |        | LCTRL    | LSHFT  | LALT | LGUI | BTCLR | 
-// // | LSHFT  |           |  F1  |   F2   |  F3  |   F10      | #  |        |          |        |      |      |       |
-// //                             |        |      |            | #  |        |          | HELD   | 
+// // |  TAB     |  F1    |  F2      |   F3           |   F4            |  F5     | #  |  F6  |  F7  | F8  |  F9  |  F10  |    DEL  |
+// // |  ALT     |  BT0   |  BT1     |   BT2          |   BT3           |  BT4    | #  |  -   |  =   |  +  |  F11 |  F12  |   "|"   |
+// // |  SHFT    |  BTCLR |  C_MUTE  |   C_VOL_DN     |   C_VOL_UP      |  C_PP   | #  |      |  _   |     |      |       |  SHFT   |
+// //                                |                |  LGUI           |  CTRL   | #  |      | HELD |     | 
                         bindings = <
-   &kp TAB   &trans &kp F7 &kp F8 &kp F9 &kp F12     &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
-   &kp LCTRL &trans &kp F4 &kp F5 &kp F6 &kp F11   &trans &kp LCTRL &kp LSHFT &kp LALT &kp LGUI &bt BT_CLR
-   &kp LSHFT &trans &kp F1 &kp F2 &kp F3 &kp F10    &trans &trans  &trans  &trans &trans &kp LSHFT
-                           &kp LALT &trans  &trans  &trans   &trans  &trans
-                       >;
+   &kp TAB    &kp F1     &kp F2     &kp F3        &kp F4        &kp F5            &kp F6     &kp F7     &kp F8     &kp F9    &kp F10   &kp DEL
+   &kp LALT   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &kp MINUS &kp EQUAL  &kp PLUS   &kp F11  &kp F12   &kp PIPE
+   &kp LSHFT  &bt BT_CLR &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_PP            &trans    &kp UNDERSCORE &trans   &trans   &trans    &kp LSHFT
+                                                                 &trans        &kp LGUI      &kp LCTRL            &trans    &trans        &trans
+                        >;
                 };
          };
 };
